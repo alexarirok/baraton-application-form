@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baraton College</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <section>
+        <h2>SECTION 1: PERSONAL INFORMATION</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputSurname">Surname:</label>
+                    <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputMiddleName">Middle Name:</label>
+                    <input type="text" class="form-control" id="inputMiddleName" placeholder="Middle Name">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputFirstName">First Name:</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                </div>
+                <small class="form-text text-muted" style="text-align: center;">As it appears on your academic documents.</small>
+            </div>
+            <div class="form-row">
+                    <div class="form-group col-md-4">
+                    <label for="inputSurname">Date of Birth:</label>
+                    <input type="text" class="form-control" id="inputDob" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputSurname">Gender:</label>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                        <label class="custom-control-label" for="defaultUnchecked">Male</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                        <label class="custom-control-label" for="defaultUnchecked">Female</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputFirstName">Place of Birth:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Country"> <br>
+                        <input type="text" class="form-control" placeholder="County">
+                    </div>
+                </div>
+            </div>  
+            <div class="form-row">              
+                <div class="form-group col-md-3">
+                    <label for="inputSurname">Marital Status:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Status</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option value="1">Single</option>
+                            <option value="2">Married</option>
+                            <option value="3">Divorced</option>
+                            <option value="3">Others</option>
+                        </select>
+                    </div>
+                </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputNationalId">National ID/Passport No:</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputNationality">Nationality:</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Nationality">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputReligion">Religion:</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Religion">
+                    </div>
+           </div>         
+                <h3>Next of Kin or Gurdian contact information(in case of Emergency)</h3>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Adrress">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Relationship">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                        </div>
+                    </div>
+                </div>
+                <h3>Financial Support/Sponsorship</h3>
+                    <p>Who is paying your fees while at Baraton College?</p>
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <label for="inputName">Name: </label> <br>
+                            <small class="form-text text-muted"> (If not self.)</small>
+                            <input type="text" class="form-control form-control-sm" placeholder="Name">
+                            <input type="text" class="form-control form-control-sm" placeholder="Relationship">
+                        </div>
+                        <div class="input-group mb-3">
+                                <label for="inputName">Permanent Address: </label> <br>
+                            <input type="text" class="form-control form-control-sm" placeholder="Address:">
+                            <input type="text" class="form-control form-control-sm" placeholder="Phone No:">
+                            <input type="text" class="form-control form-control-sm" placeholder="Email:">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="inputName">Current Address: </label> <br>
+                            <small class="form-text text-muted"> (If different from Permanent Address.)</small>
+                            <input type="text" class="form-control form-control-sm" placeholder="Address:">
+                            <input type="text" class="form-control form-control-sm" placeholder="Phone No:">
+                            <input type="text" class="form-control form-control-sm" placeholder="Email:">
+                        </div>
+                    </div>
+                </form>
+                </section>
+                <h2>SECTION 2: ACADEMIC INFORMATION</h2>
+                <P>List all schools and colleges attended to date and attach copies of all academic documents</P>
+                <form class="schools">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputSurname">Name:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputMiddleName">From - To(month and year):</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputFirstName">Certificate awarded:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <button id="school" type="submit" class="btn btn-primary">Add School</button>
+                </form>
+                
+                <h2>SECTION 3: ACADEMIC PROGRAMME/COURSE YOUR ARE APPLYING FOR</h2>
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputSurname">First Programme:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputMiddleName">Second Choice:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputFirstName">Third Choice:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPreMode">Preffered Mode of Study (where applicable):</label>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">Full Time</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Part Time</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">School-based</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4">Distance/Virtual/Online</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5">Face to Face</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPreMode">Preffered Campus (depends on programme applied):</label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">Baraton Main Campus</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">Kapsabet Campus</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio3">Sosiot Campus-Kericho</label>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <b>Date of enrollment</b> </span>
+                        </div>
+                        <input type="text" aria-label="Month" class="form-control" placeholder="Month:">
+                        <input type="text" aria-label="Year" class="form-control" placeholder="Year:">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <h4>Additional information</h4>
+                        <label for="inputPreMode">How did you learn about Baraton College? (tick all that apply):</label>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                            <label class="custom-control-label" for="customCheck6">College Website</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7">College Brochure</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Radio Ad</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck9">
+                            <label class="custom-control-label" for="customCheck9">News Paper Ad </label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck10">
+                            <label class="custom-control-label" for="customCheck10">Teacher/College Staff</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck11">
+                            <label class="custom-control-label" for="customCheck11">Former/current student</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck12">
+                            <label class="custom-control-label" for="customCheck12">Friend/Family</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck13">
+                            <label class="custom-control-label" for="customCheck13">Others(specify)<input type="text" class="form-control"></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Briefly tell us why you want to study at Baraton College:</label>
+                        <textarea class="form-control" rows="2" id="comment" name="text"></textarea>
+                    </div>
+                </form>
+            <h2>SECTION 4: DECLARATION</h2>
+                <p>By signing this application form you confirm that the information you have given is correct.</p>
+                <div class="form-group">
+                    <div class="input-group mb-3 col-md-6">
+                        <label for="inputName">Student Signature: </label> <br>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                    <div class="input-group mb-3 col-md-6">
+                        <label for="inputName">Date: </label> <br>
+                        <input type="text" class="form-control form-control-sm">
+                    </div>
+                </div>
+            <h2>SECTION 5: SUBMISSION OF THE APPLICATION FORMS</h2>
+                <div class="form-group">
+                    <address>
+                        All completed forms should be addressed to: <br>
+                        Office of Academic, Baraton College, <br>
+                        P.O. Box 30-30306, Baraton, or P.O. Box 631-30300, Kapsabet.
+                    </address>
+                </div>
+            <h2>SECTION 6: FOR OFFICIAL USE ONLY</h2>
+                <p>Approved/Not approved for admission</p>
+                <div class="form-group">
+                    <label for="comment">If Not approved reason:</label>
+                    <textarea class="form-control" rows="2" id="comment" name="text"></textarea>
+                </div>
+                <div class="form-group">
+                        <div class="input-group mb-3 col-md-6">
+                            <label for="inputName">Signature: </label> <br>
+                            <input type="text" class="form-control form-control-sm">
+                        </div>
+                        <div class="input-group mb-3 col-md-6">
+                            <label for="inputName">Date: </label> <br>
+                            <input type="text" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Have read and understood all Terms and Conditions.
+                        </label>
+                    </div>
+                </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+ 
+</body>
+</html>

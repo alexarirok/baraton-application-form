@@ -1,0 +1,18 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: blanchedalmond;
+}
+.header {
+    text-align: center;
+    color: #1E90FF;
+    text-decoration: underline;
+}
+#intro {
+    color:magenta;
+}
+.intro1 {
+    text-decoration: underline;
+}
+.header2 {
+    color: #1E90FF;
+}

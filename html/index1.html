@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Baraton College</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -12,8 +13,20 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="header">APPLICATION FOR ADMISSION</h1>
+        <div id="intro">
+            <h3 class="intro1">Instructions:</h3>
+                <ol class="lead">
+                    <li>Please read and understand each item before filling in any information.</li>
+                    <li>Print in blocks or type all required information.</li>
+                    <li>Submit a completed form with non-refundable fee of Ksh. 1000.</li>
+                    <li>Upload a passport size colored photo.</li>
+                    <li>Upload and attach copies of national ID/Passport and all academic/professional certificates and transcripts.</li>
+                </ol>
+        </div>
+        <br>
     <section>
-        <h2>SECTION 1: PERSONAL INFORMATION</h2>
+        <h2 class="header2">SECTION 1: PERSONAL INFORMATION</h2>
         <form>
             <div class="form-row">
                 <div class="form-group col-md-4">
@@ -82,7 +95,7 @@
                         <input type="text" class="form-control" id="inputAddress" placeholder="Religion">
                     </div>
            </div>         
-                <h3>Next of Kin or Gurdian contact information(in case of Emergency)</h3>
+                <h3 class="header2">Next of Kin or Gurdian contact information(in case of Emergency)</h3>
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <div class="input-group mb-3">
@@ -102,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <h3>Financial Support/Sponsorship</h3>
+                <h3 class="header2">Financial Support/Sponsorship</h3>
                     <p>Who is paying your fees while at Baraton College?</p>
                     <div class="form-group">
                         <div class="input-group mb-3">
@@ -127,12 +140,13 @@
                     </div>
                 </form>
                 </section>
-                <h2>SECTION 2: ACADEMIC INFORMATION</h2>
+                <br>
+                <h2 class="header2">SECTION 2: ACADEMIC INFORMATION</h2>
                 <P>List all schools and colleges attended to date and attach copies of all academic documents</P>
-                <form class="schools">
+                <form id="schools">
                     <div class="form-row">
                         <div class="form-group col-md-4">
-                            <label for="inputSurname">Name:</label>
+                            <label for="inputName">Name:</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="form-group col-md-4">
@@ -146,8 +160,8 @@
                     </div>
                     <button id="school" type="submit" class="btn btn-primary">Add School</button>
                 </form>
-                
-                <h2>SECTION 3: ACADEMIC PROGRAMME/COURSE YOUR ARE APPLYING FOR</h2>
+                <br>
+                <h2 class="header2">SECTION 3: ACADEMIC PROGRAMME/COURSE YOUR ARE APPLYING FOR</h2>
                 <form action="">
                     <div class="form-row">
                         <div class="form-group col-md-4">
@@ -211,7 +225,7 @@
                     </div>
                     </div>
                     <div class="form-group">
-                        <h4>Additional information</h4>
+                        <h4 class="header2">Additional information</h4>
                         <label for="inputPreMode">How did you learn about Baraton College? (tick all that apply):</label>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck6">
@@ -251,7 +265,8 @@
                         <textarea class="form-control" rows="2" id="comment" name="text"></textarea>
                     </div>
                 </form>
-            <h2>SECTION 4: DECLARATION</h2>
+                <br>
+            <h2 class="header2">SECTION 4: DECLARATION</h2>
                 <p>By signing this application form you confirm that the information you have given is correct.</p>
                 <div class="form-group">
                     <div class="input-group mb-3 col-md-6">
@@ -263,15 +278,16 @@
                         <input type="text" class="form-control form-control-sm">
                     </div>
                 </div>
-            <h2>SECTION 5: SUBMISSION OF THE APPLICATION FORMS</h2>
+            <h2 class="header2">SECTION 5: SUBMISSION OF THE APPLICATION FORMS</h2>
                 <div class="form-group">
-                    <address>
+                    <address class="lead">
                         All completed forms should be addressed to: <br>
                         Office of Academic, Baraton College, <br>
                         P.O. Box 30-30306, Baraton, or P.O. Box 631-30300, Kapsabet.
                     </address>
                 </div>
-            <h2>SECTION 6: FOR OFFICIAL USE ONLY</h2>
+                <br>
+            <h2 class="header2">SECTION 6: FOR OFFICIAL USE ONLY</h2>
                 <p>Approved/Not approved for admission</p>
                 <div class="form-group">
                     <label for="comment">If Not approved reason:</label>
